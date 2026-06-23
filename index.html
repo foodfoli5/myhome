@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>윤성혁 자기소개 홈페이지</title>
+
+    <style>
+        /* =========================
+       전체 기본 스타일
+       ========================= */
+
+        /* 초보자 수정 위치: 전체 글꼴, 배경색, 글자색을 바꾸고 싶으면 여기 수정 */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7fbff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* 초보자 수정 위치: 화면 전체 너비와 가운데 정렬 설정 */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* =========================
+       상단 메인 영역
+       ========================= */
+
+        /* 초보자 수정 위치: 상단 배경색, 여백을 바꾸고 싶으면 여기 수정 */
+        header {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* 초보자 수정 위치: 큰 제목 크기 수정 */
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        /* 초보자 수정 위치: 한 줄 소개 문장 크기 수정 */
+        header p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* 초보자 수정 위치: 이메일 박스 스타일 수정 */
+        .contact-box {
+            display: inline-block;
+            background-color: white;
+            color: #0077b6;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact-box:hover {
+            background-color: #eaf8ff;
+        }
+
+        /* =========================
+       소개 카드 영역
+       ========================= */
+
+        /* 초보자 수정 위치: 중간 영역 위아래 여백 수정 */
+        section {
+            padding: 60px 20px;
+        }
+
+        /* 초보자 수정 위치: 섹션 제목 스타일 수정 */
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #023e8a;
+        }
+
+        /* 초보자 수정 위치: 카드 배치 방식 수정 */
+        .card-wrap {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        /* 초보자 수정 위치: 카드 배경색, 둥근 정도, 그림자 수정 */
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            flex: 1;
+            min-height: 180px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* 초보자 수정 위치: 카드 제목 색상 수정 */
+        .card h3 {
+            color: #0077b6;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* 초보자 수정 위치: 카드 내용 글자 크기 수정 */
+        .card p {
+            font-size: 16px;
+        }
+
+        /* =========================
+       하단 푸터 영역
+       ========================= */
+
+        /* 초보자 수정 위치: 푸터 배경색, 글자색 수정 */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 24px;
+            font-size: 14px;
+        }
+
+        /* =========================
+       모바일 반응형 설정
+       ========================= */
+
+        /* 초보자 수정 위치: 모바일 화면에서 보이는 크기 조정 */
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .card-wrap {
+                flex-direction: column;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- =========================
+       상단 자기소개 영역
+       ========================= -->
+
+    <header>
+        <div class="container">
+            <!-- 초보자 수정 위치: 이름을 바꾸고 싶으면 아래 h1 내용 수정 -->
+            <h1>안녕하세요, 윤성혁입니당
+            </h1>
+
+            <!-- 초보자 수정 위치: 한 줄 소개를 바꾸고 싶으면 아래 문장 수정 -->
+            <p>단체급식의 모든 것을 쉽고 편리하게 연결하는 푸드폴리오 대표입니다.</p>
+
+            <!-- 초보자 수정 위치: 이메일 주소를 본인 이메일로 바꾸고 싶으면 아래 2곳 수정 -->
+            <a class="contact-box" href="mailto:naysh023@gmail.com">
+                naysh023@gmail.com
+            </a>
+        </div>
+    </header>
+
+    <!-- =========================
+       나를 소개하는 카드 영역
+       ========================= -->
+
+    <section>
+        <div class="container">
+            <!-- 초보자 수정 위치: 중간 제목을 바꾸고 싶으면 아래 h2 수정 -->
+            <h2>나를 소개하는 3가지</h2>
+
+            <div class="card-wrap">
+                <!-- 초보자 수정 위치: 첫 번째 카드 내용 수정 -->
+                <div class="card">
+                    <h3>01. 푸드폴리오 대표</h3>
+                    <p>
+                        기업, 병원, 학교, 공공기관 등 다양한 곳에 필요한 단체급식과 도시락을 연결하는 일을 하고 있습니다.
+                    </p>
+                </div>
+
+                <!-- 초보자 수정 위치: 두 번째 카드 내용 수정 -->
+                <div class="card">
+                    <h3>02. 연결을 만드는 사람</h3>
+                    <p>
+                        식사가 필요한 고객사와 믿을 수 있는 급식업체를 이어주며 더 편리한 급식 환경을 만들어가고 있습니다.
+                    </p>
+                </div>
+
+                <!-- 초보자 수정 위치: 세 번째 카드 내용 수정 -->
+                <div class="card">
+                    <h3>03. 성장하는 사업가</h3>
+                    <p>
+                        <strong>푸드폴리오를 더 많은 기관과 기업이 이용하는 단체급식 중개 플랫폼으로 성장시키고 있습니다.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+       하단 푸터 영역
+       ========================= -->
+
+    <footer>
+        <!-- 초보자 수정 위치: 연도나 이름을 바꾸고 싶으면 아래 문장 수정 -->
+        © 2026 윤성혁. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
